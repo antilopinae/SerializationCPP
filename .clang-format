@@ -1,0 +1,166 @@
+BasedOnStyle: Google
+Language: Cpp
+ColumnLimit: 200
+
+BraceWrapping:
+ # class definition behind
+ AfterClass: false
+ # After the control statement
+ AfterControlStatement: false
+ # enum definition behind
+ AfterEnum: false
+ # After the function definition
+ AfterFunction: false
+ # After the namespace definition
+ AfterNamespace: false
+ # ObjC definition behind
+ AfterObjCDeclaration: false
+ # struct definition behind
+ AfterStruct: false
+ # union definition
+ AfterUnion: false
+ #ExternBlock definition behind
+ AfterExternBlock: false
+ # before catch
+ BeforeCatch: false
+ # else before
+ BeforeElse: false
+ # Indented braces
+ IndentBraces: true
+ # Split empty function
+ SplitEmptyFunction: true
+ # Split empty records
+ SplitEmptyRecord: true
+ # Split empty namespace
+ SplitEmptyNamespace: true
+
+# Add a space after @property, \@property (readonly) instead of \@property(readonly).
+ObjCSpaceAfterProperty: true
+# Offset of access specifiers (public, private, etc.)
+AccessModifierOffset: -2
+# Alignment after opening brackets (opening parentheses, opening angle brackets, opening square brackets): Align, DontAlign, AlwaysBreak (always wrap after opening brackets)
+AlignAfterOpenBracket: Align
+# When consecutive declarations, align all declared variable names
+AlignConsecutiveDeclarations: false
+# Left align backslashes that escape newlines (use backslashes for newlines)
+AlignEscapedNewlinesLeft: true
+# Align the operands of binary and ternary expressions horizontally
+AlignOperands: true
+# Align consecutive trailing comments
+AlignTrailingComments: true
+# Allow all parameters of the function declaration to be placed on the next line
+AllowAllParametersOfDeclarationOnNextLine: true
+# Allow short blocks on the same line
+AllowShortBlocksOnASingleLine: true
+# Allow short case labels on the same line
+AllowShortCaseLabelsOnASingleLine: true
+# Allow short functions to be placed on the same line: None, InlineOnly (defined in the class), Empty (empty function), Inline (defined in the class, empty function), All
+AllowShortFunctionsOnASingleLine: true
+# Allow short if statements to stay on the same line
+AllowShortIfStatementsOnASingleLine: true
+
+# Always break after defining the return type (deprecated)
+AlwaysBreakAfterDefinitionReturnType: None
+# Always wrap after the return type: None, All, TopLevel (top functions, functions not included in the class),
+# AllDefinitions (all definitions, excluding declarations), TopLevelDefinitions (the definitions of all top-level functions)
+AlwaysBreakAfterReturnType: None
+# Always wrap before multi-line string literal
+AlwaysBreakBeforeMultilineStrings: false
+# Always wrap after the template statement
+AlwaysBreakTemplateDeclarations: false
+# false means that the function arguments are either on the same line or on their own line
+BinPackArguments: true
+# false means that all formal parameters are either on the same line or on their own line
+BinPackParameters: true
+# Braces wrap, only valid when BreakBeforeBraces is set to Custom
+# Newline before binary operators: None (newline after the operator), NonAssignment (newline before the non-assignment operator), All (newline before the operator)
+BreakBeforeBinaryOperators: NonAssignment
+# Wrap a line before the brace: Attach (always attach the brace to the surrounding context), Linux (except for functions, namespaces and class definitions, similar to Attach),
+# Mozilla (except enumeration, function, record definition, similar to Attach), Stroustrup (except function definition, catch, else, similar to Attach),
+# Allman (always break before the curly brace), GNU (always break before the curly brace, and add extra indentation to the curly brace of the control statement), WebKit (newline before the function), Custom
+# Note: It is considered that the statement block also belongs to the function
+BreakBeforeBraces: Custom
+# Break before ternary operator
+BreakBeforeTernaryOperators: true
+# Break before the comma in the initialization list of the constructor
+BreakConstructorInitializersBeforeComma: false
+BreakConstructorInitializers: BeforeColon
+BreakAfterJavaFieldAnnotations: false
+BreakStringLiterals: true
+# The initialization list of the constructor is either all on the same line or on their own line
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+# The comfort list of constructors all wrap
+AllowAllConstructorInitializersOnNextLine: false
+# The indentation width of the initialization list of the constructor
+ConstructorInitializerIndentWidth: 4
+# The indentation width of the continued line
+ContinuationIndentWidth: 4
+# Remove the space before the curly braces {after and before the C++11 list initialization
+Cpp11BracedListStyle: true
+# Turn off formatting
+DisableFormat: false
+# Automatically detect whether the function call and definition are formatted as one parameter per line (Experimental)
+ExperimentalAutoDetectBinPacking: false
+# Fix namespace comment
+FixNamespaceComments: true
+# Need to be interpreted as a foreach loop instead of a function call macro
+# Indent case label
+IndentCaseLabels: true
+# When the function return type wraps, indent the function declaration or the function name of the function definition
+IndentWrappedFunctionNames: false
+JavaScriptQuotes: Leave
+JavaScriptWrapImports: true
+# Keep the blank line at the beginning of the block
+KeepEmptyLinesAtTheStartOfBlocks: true
+# The regular expression of a macro to start a block
+# Maximum number of consecutive blank lines
+MaxEmptyLinesToKeep: 5
+# Namespace indentation: None, Inner (indent the content in the nested namespace), All
+NamespaceIndentation: None
+# Indent width when using ObjC block
+ObjCBlockIndentWidth: 4
+# Add a space before ObjC's protocol list
+ObjCSpaceBeforeProtocolList: false
+# Penalty that wraps the function call after call(
+PenaltyBreakBeforeFirstCallParameter: 19
+# Introduce a penalty for line breaks in a comment
+PenaltyBreakComment: 300
+# The penalty for the first line break before <<
+PenaltyBreakFirstLessLess: 120
+# Introduce a penalty for line breaks in a string literal
+PenaltyBreakString: 1000
+# Penalty for each character outside the line character limit
+PenaltyExcessCharacter: 1000000
+# Put the return type of the function in the penalty of its own line
+PenaltyReturnTypeOnItsOwnLine: 60
+# Allow retypesetting comments
+ReflowComments: true
+# Allow sorting#include
+SortIncludes: true
+SortUsingDeclarations: true
+# Add space after C style type conversion
+SpaceAfterCStyleCast: false
+# Add a space before the assignment operator
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: false
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: ControlStatements
+# Add a space before opening the parentheses: Never, ControlStatements, Always
+# Add spaces in empty parentheses
+SpaceInEmptyParentheses: false
+# The number of spaces added before trailing comments (only applicable to //)
+SpacesBeforeTrailingComments: 2
+# Add spaces before and after the angle brackets
+SpacesInAngles: false
+# Add spaces in the literal of the container (ObjC and JavaScript arrays and dictionaries, etc.)
+SpacesInContainerLiterals: true
+# Add spaces in the brackets of C-style type conversion
+SpacesInCStyleCastParentheses: false
+# Add a space before the (after and) of the parentheses
+SpacesInParentheses: false
+# Add a space before the [after and] of the square brackets, the declaration of lamda expressions and arrays of unspecified size will not be affected
+SpacesInSquareBrackets: false
+# Standard: Cpp03, Cpp11, Auto
+Standard: Cpp11
